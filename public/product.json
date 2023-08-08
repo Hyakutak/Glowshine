@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Lorem ipsum",
+            "image": "/assets/image/products/produto.png",
+            "price": 1.598,
+            "price-promotion": 1.498,
+            "stock": 2
+        },
+        {
+            "id": 2,
+            "name": "Lorem ipsum 2",
+            "image": "/assets/image/products/produto.png",
+            "price": 1.598,
+            "price-promotion": 1.498,
+            "stock": 0
+        }
+    ]
+}
