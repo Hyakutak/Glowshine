@@ -4,6 +4,7 @@ export const defaultTheme = {
 
     'background': '#FFF',
     'background-black': '#141414',
+    'newsletter': '#A7A7A7',
 
     'base-title': '#000',
     'base-text': '#000',
