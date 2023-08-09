@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import { device } from '../../utils/device';
 
 export const ContainerFooter = styled.footer`
     width: 100%;
@@ -9,6 +10,17 @@ export const ContainerFooter = styled.footer`
         max-width: 73.125rem;
         display: flex;
         justify-content: space-between;
+
+        ${device.tablet} {
+            max-width: 100%;
+            padding: .7rem 6.25rem;
+        }
+
+        ${device.mobile} {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
     }
 `;
 
@@ -22,6 +34,12 @@ export const SubFooter = styled.section`
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        ${device.mobile} {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
         & aside {
             display: flex;
             gap: 2.5rem;
@@ -88,5 +106,9 @@ export const ContainerSocial = styled.section`
     > div {
         display: flex;
         gap: .63rem;
+
+        ${device.mobile} {
+            justify-content: center;
+        }
     }
 `;

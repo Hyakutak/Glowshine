@@ -5,6 +5,8 @@ export const defaultTheme = {
     'background': '#FFF',
     'background-black': '#141414',
     'newsletter': '#A7A7A7',
+    'gray': '#BBB',
+    'opacity-card': '#FFFFFF7A',
 
     'base-title': '#000',
     'base-text': '#000',

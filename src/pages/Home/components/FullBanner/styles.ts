@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import { device } from '../../../../utils/device';
 
 export const ContainerFullBanner = styled.section`
     position: relative;
@@ -29,6 +30,11 @@ export const ContainerFullBanner = styled.section`
             font-weight: 700;
             letter-spacing: 1.2rem;
             text-transform: uppercase;
+
+            ${device.mobile} {
+                font-size: 1rem;
+                text-align: center;
+            }
         }
 
         & a {

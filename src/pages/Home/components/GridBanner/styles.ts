@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import { device } from '../../../../utils/device';
 
 export const ContainerGridBanner = styled.article`
     display: grid;
@@ -36,6 +37,11 @@ export const ContainerGridBanner = styled.article`
                 font-weight: 900;
                 letter-spacing: 0.36rem;
                 text-transform: uppercase;
+
+                ${device.mobile} {
+                    font-size: .75rem;
+                    text-align: center;
+                }
             }
 
             & a {

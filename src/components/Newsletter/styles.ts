@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import { device } from '../../utils/device';
 
 export const ContainerNewsletter = styled.aside`
     width: 100%;
@@ -11,6 +12,16 @@ export const ContainerNewsletter = styled.aside`
         display: flex;
         align-items: center;
         gap: 1rem;
+
+        ${device.tablet} {
+            max-width: 100%;
+            padding: .7rem 6.25rem;
+        }
+
+        ${device.mobile} {
+            flex-direction: column;
+            text-align: center;
+        }
 
         & header {
             & h2 {
@@ -38,6 +49,7 @@ export const ContainerNewsletter = styled.aside`
 
            & input {
                 all: unset;
+                cursor: pointer;
                 color: ${(props) => props.theme['newsletter']};
                 font-size: 0.75rem;
            }
@@ -45,6 +57,7 @@ export const ContainerNewsletter = styled.aside`
 
         & button {
             all: unset;
+            cursor: pointer;
             width: 7rem;
             height: 2.5rem;
             background: ${(props) => props.theme['black']};

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { device } from '../utils/device';
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -17,5 +18,14 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1rem;
+  }
+
+  ${device.tablet} {
+    html{
+        font-size: 87.5%;
+    }
+    main{
+        padding: 0 1rem;
+    }
   }
 `;
